@@ -4,7 +4,7 @@ Donate link: http://www.e2soft.com/
 Tags: WP slider, thumbnail slider, image slider, image gallery, awesome slider, slider with thumbnail.
 Requires at least: 3.7
 Tested up to: 3.9.1
-Stable tag: 0.1
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,9 +31,8 @@ Yes.
 Yes.
 
 == Screenshots ==
-1. Ticker Settings
-2. Back End
-3. Front End
+1. Back End
+2. Front End
 
 == Changelog ==
 1. New version
