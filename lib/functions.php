@@ -48,11 +48,19 @@ function wptPageFunction() {
   <div id="nhtRight">
   
   <div class="nhtWidget">
-  	
+  		  <h3>Hire Me on Odesk.com</h3>
+          <!– START Hire Me on oDesk Widget –>
+          <script language="JavaScript">
+          var odesk_widgets_width = 340;
+          var odesk_widgets_height = 250;
+          </script>
+          <script src="https://www.odesk.com/widgets/providers/v1/large/~01bf79370d989b2033.js"></script>
+          <!– END Hire Me on oDesk Widget –>
   </div>
   
   <div class="nhtWidget">
-  
+  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
+  </div>
   </div>
   
   </div>
