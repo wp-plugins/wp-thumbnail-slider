@@ -62,7 +62,7 @@ function wptPageFunction() {
   		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
   </div>
   </div>
-  
+ <div class="clrFix"></div> 
   </div>
   
      
