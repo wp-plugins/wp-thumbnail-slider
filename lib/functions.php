@@ -18,15 +18,15 @@ function wptPageFunction() {
 			<table class="form-table">
 				<tr>
 					<th><label for="wpt_border_radius">Border Radius</label></th>
-					<td><input type="text" name="wpt_border_radius" value="<?php $wpt_border_radius = get_option('wpt_border_radius'); if(!empty($wpt_border_radius)) {echo $wpt_border_radius;} else {echo "5";}?>">px;</td>
+					<td><input type="text" name="wpt_border_radius" value="<?php $wpt_border_radius = get_option('wpt_border_radius'); if(!empty($wpt_border_radius)) {echo $wpt_border_radius;} else {echo "0";}?>">px;</td>
 				</tr>
 				<tr>
 					<th><label for="wpt_border">Slider Border </label></th>
-					<td><input type="text" name="wpt_border" value="<?php $wpt_border = get_option('wpt_border'); if(!empty($wpt_border)) {echo $wpt_border;} else {echo "5";}?>">px;</td>
+					<td><input type="text" name="wpt_border" value="<?php $wpt_border = get_option('wpt_border'); if(!empty($wpt_border)) {echo $wpt_border;} else {echo "0";}?>">px;</td>
 				</tr>
 				<tr>
-					<th><label for="wpt_border">Slider Border Color </label></th>
-					<td>#<input type="text" name="wpt_bg_color" value="<?php $wpt_bg_color = get_option('wpt_border'); if(!empty($wpt_bg_color)) {echo $wpt_bg_color;} else {echo "569625";}?>"></td>
+					<th><label for="wpt_bg_color">Slider Border Color </label></th>
+					<td>#<input type="text" name="wpt_bg_color" value="<?php $wpt_bg_color = get_option('wpt_bg_color'); if(!empty($wpt_bg_color)) {echo $wpt_bg_color;} else {echo "569625";}?>"></td>
 				</tr>				<tr>
 					<th><label for="wpt_thumb_border">Thumbnail Border Color</label></th>
 					<td>#<input type="text" name="wpt_thumb_border" value="<?php $wpt_thumb_border = get_option('wpt_thumb_border'); if(!empty($wpt_thumb_border)) {echo $wpt_thumb_border;} else {echo "0a0a0a";}?>"></td>
@@ -59,7 +59,7 @@ function wptPageFunction() {
   </div>
   
   <div class="nhtWidget">
-  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/news-headline-ticker/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
+  		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/wp-thumbnail-slider/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
   </div>
   </div>
  <div class="clrFix"></div> 
