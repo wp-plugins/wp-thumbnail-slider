@@ -17,6 +17,8 @@ function wptPageFunction() {
         <h3>Insert your text & background color</h3>
         <p>WP Thumbnail Slider is a fully responsive wordpress image slider plugin with thumbnail. "PLEASE DON'T USE VARIOUS SIZE IMAGE ON SLIDER. USE SAME SIZE IMAGE". <br />
         Just copy and paste "<strong>if(function_exists('wptThumbnailSlider')){wPTPostLoop();}</strong> in the template code or <strong>[WPT-SLIDER]</strong> in the post/page" where you want to display imgae slider.</p>
+        
+
 			<table class="form-table">
 				<tr>
 					<th><label for="wpt_border_radius">Border Radius</label></th>
@@ -42,7 +44,16 @@ function wptPageFunction() {
         <input type="hidden" name="action" value="update" />
         <input type="hidden" name="page_options" value="wpt_border_radius, wpt_border, wpt_bg_color, wpt_thumb_border, wpt_thumb_hover" />
 		<p class="submit"><input type="submit" name="Submit" value="<?php _e('Save Changes') ?>" /></p>
-	</form>      
+	</form>
+    
+    <p><h3>Donate and support the development.</h3> With your help I can make Simple Fields even better! $5, $10, $100 – any amount is fine! :)</p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="82C6LTLMFLUFW">
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+</form>
+      
   </div>
   </div>
  

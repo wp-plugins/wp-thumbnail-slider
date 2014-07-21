@@ -12,8 +12,16 @@
 	text-align: center;
 }
 .newsWrap h3 {
-	background: none repeat scroll 0 0 #eee;
     padding: 15px;
+	background: #eeeeee;
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #eeeeee 50%, #eeeeee 51%, #cccccc 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(50%,#eeeeee), color-stop(51%,#eeeeee), color-stop(100%,#cccccc));
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#eeeeee 50%,#eeeeee 51%,#cccccc 100%);
+	background: -o-linear-gradient(top,  #eeeeee 0%,#eeeeee 50%,#eeeeee 51%,#cccccc 100%);
+	background: -ms-linear-gradient(top,  #eeeeee 0%,#eeeeee 50%,#eeeeee 51%,#cccccc 100%);
+	background: linear-gradient(to bottom,  #eeeeee 0%,#eeeeee 50%,#eeeeee 51%,#cccccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+
 }
 #nhtLeft {
 	background: none repeat scroll 0 0 #fff;
@@ -37,6 +45,9 @@
 }
 .clrFix {
 	clear: both;
+}
+.inside > form {
+  text-align: center;
 }
  @media all and (max-width: 1160px) and (min-width: 320px) {
 	.nhtWidget iframe {
