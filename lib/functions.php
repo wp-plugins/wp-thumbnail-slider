@@ -15,6 +15,8 @@ function wptPageFunction() {
 		        
 		<div class="inside">
         <h3>Insert your text & background color</h3>
+        <p>WP Thumbnail Slider is a fully responsive wordpress image slider plugin with thumbnail. "PLEASE DON'T USE VARIOUS SIZE IMAGE ON SLIDER. USE SAME SIZE IMAGE". <br />
+        Just copy and paste "<strong>if(function_exists('wptThumbnailSlider')){wPTPostLoop();}</strong> in the template code or <strong>[WPT-SLIDER]</strong> in the post/page" where you want to display imgae slider.</p>
 			<table class="form-table">
 				<tr>
 					<th><label for="wpt_border_radius">Border Radius</label></th>
