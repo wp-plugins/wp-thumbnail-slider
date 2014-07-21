@@ -61,6 +61,7 @@ function wptPageFunction() {
   </div>
   
   <div class="nhtWidget">
+  		<h3>Need Responsive Web Design?</h3>
   		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/wp-thumbnail-slider/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
   </div>
   </div>
