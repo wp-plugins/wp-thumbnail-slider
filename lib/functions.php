@@ -61,16 +61,15 @@ function wptPageFunction() {
   <div id="nhtRight">
   
   <div class="nhtWidget">
-  		  <h3>Hire Me on Odesk.com</h3>
-          <!– START Hire Me on oDesk Widget –>
-          <script language="JavaScript">
-          var odesk_widgets_width = 340;
-          var odesk_widgets_height = 250;
-          </script>
-          <script src="https://www.odesk.com/widgets/providers/v1/large/~01bf79370d989b2033.js"></script>
-          <!– END Hire Me on oDesk Widget –>
-  </div>
-  
+  <?php
+	$urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio");
+	$random_urls = array_rand($urls_total);
+  ?>
+	<iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
+	</iframe>
+	</div>
+    
+  <div class="clrFix"></div>
   <div class="nhtWidget">
   		<h3>Need Responsive Web Design?</h3>
   		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/wp-thumbnail-slider/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
@@ -78,8 +77,6 @@ function wptPageFunction() {
   </div>
  <div class="clrFix"></div> 
   </div>
-  
-     
 <div class="clrFix"></div>
 <?php		
 	echo '</div>';

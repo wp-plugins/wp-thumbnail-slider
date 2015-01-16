@@ -1,12 +1,12 @@
 <?php
 /*
   Plugin Name: WP Thumbnail Slider
-  Plugin URI: http://www.e2soft.com/wordpress-plugin/wp-thumbnail-slider
+  Plugin URI: http://www.e2soft.com/blog/wp-thumbnail-slider/
   Description: WP Thumbnail Slider is a wordpress image slider plugin with thumbnail. Use this shortcode <strong>[WPT-SLIDER]</strong> in the post/page" where you want to display slider.
-  Version: 1.1
+  Version: 1.3
   Author: S M Hasibul Islam
-  Author URI: https://www.odesk.com/o/profiles/users/_~~f23680b391834fd1/
-  Copyright: 2013 S M Hasibul Islam http:/`/www.e2soft.com
+  Author URI: http://www.e2soft.com
+  Copyright: 2015 S M Hasibul Islam http:/`/www.e2soft.com
   License URI: license.txt
  */
 
@@ -142,7 +142,6 @@ add_action('wp_footer', 'slideScript');
 function wptThumbnailSlider() {
     return wPTPostLoop();
 }
-
 add_shortcode('WPT-SLIDER', 'wPTPostLoop');
 
 foreach ( glob( plugin_dir_path( __FILE__ )."lib/*.php" ) as $wptfile )
