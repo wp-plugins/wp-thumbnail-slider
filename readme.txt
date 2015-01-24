@@ -13,9 +13,21 @@ WP Thumbnail Slider is a fully responsive wordpress image slider plugin with thu
 == Description ==
 WP Thumbnail Slider is a wordpress plugin to display your image gallery with thumbnail slider on your website! 
 
-The plugin is designed for any image gallery or image slider. "WP Thumbnail Slider" is a free wordpress plugin. Any developer can change Or modify this plugin without author permission.
+The plugin is designed for any image gallery or image slider. "WP Thumbnail Slider" is a free wordpress plugin.
 
 View live demo of this plugin [DEMO](http://www.e2soft.com/blog/wp-thumbnail-slider/).
+
+= Features =
+
+  * Very easy to install and configure
+  * Fully mobile responsive -will adapt to any device
+  * Shortcode system
+  * jQuery color picker.
+  * Slider images uploaded to WordPress Media Library
+  * Custom post supported
+  * Flexible and easy to use
+  * Auto Slider Control
+  * Plugin tested with IE6+, FF 20+, Chrome, Safari
 
 == Installation ==
 1. Upload `wp-thumbnail-slider` to the `/wp-content/plugins/` directory
