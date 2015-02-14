@@ -1,5 +1,5 @@
 ﻿=== WP Thumbnail Slider ===
-Contributors: csehasib
+Contributors: csehasib, e2soft
 Donate link: http://www.e2soft.com/
 Tags: WP slider, thumbnail slider, image slider, image gallery, awesome slider, slider with thumbnail.
 Requires at least: 3.7
