@@ -3,8 +3,8 @@ Contributors: csehasib, e2soft
 Donate link: http://www.e2soft.com/
 Tags: WP slider, thumbnail slider, image slider, image gallery, awesome slider, slider with thumbnail.
 Requires at least: 3.7
-Tested up to: 4.1
-Stable tag: 1.4
+Tested up to: 4.1.1
+Stable tag: 1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -53,6 +53,7 @@ Yes.
 1.2:- Fix some issue.
 1.3:- Fix some issue.
 1.4:- Add jQuery color picker.
+1.5:- Update jQuery & CSS.
 
 
 == Upgrade notice ==

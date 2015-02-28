@@ -9,7 +9,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-#wptSlider{}
 /* Browser Resets
 *********************************/
 .flex-container a:active,
@@ -70,11 +69,10 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav > li {
     list-style: none outside none !important;
 }
-
-
-
-
-
+.flex-prev, .flex-prev:hover {
+  text-decoration: none;
+  border: 0 none !important;
+}
 /* Control Nav */
 .flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center; display:none;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
@@ -89,9 +87,6 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 #carousel > .flex-viewport > .slides > li{margin:5px; cursor:pointer; border:3px solid #0A0A0A;}
 #carousel > .flex-viewport > .slides > .flex-active-slide{border:3px solid #AE66B0; }
-
-
-
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
