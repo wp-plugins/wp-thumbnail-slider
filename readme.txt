@@ -3,8 +3,8 @@ Contributors: csehasib, e2soft
 Donate link: http://www.e2soft.com/
 Tags: WP slider, thumbnail slider, image slider, image gallery, awesome slider, slider with thumbnail.
 Requires at least: 3.7
-Tested up to: 4.1.1
-Stable tag: 1.6
+Tested up to: 4.2.1
+Stable tag: 1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ WP Thumbnail Slider is a wordpress plugin to display your image gallery with thu
 
 The plugin is designed for any image gallery or image slider. "WP Thumbnail Slider" is a free wordpress plugin.
 
-View live demo of this plugin [DEMO](http://www.e2soft.com/blog/wp-thumbnail-slider/).
+View live demo of [WP Thumbnail Slider](http://www.e2soft.com/blog/wp-thumbnail-slider/).
 
 = Features =
 
@@ -55,7 +55,7 @@ Yes.
 1.4:- Add jQuery color picker.
 1.5:- Update jQuery & CSS.
 1.5:- Add page redirect after activation.
-
+1.8:- Fix some style issue.
 
 == Upgrade notice ==
 N/A

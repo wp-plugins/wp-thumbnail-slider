@@ -56,15 +56,6 @@ function wptPageFunction() {
   
   <div id="nhtRight">
   
-  <div class="nhtWidget">
-  <?php
-	$urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio");
-	$random_urls = array_rand($urls_total);
-  ?>
-	<iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
-	</iframe>
-	</div>
-    
   <div class="clrFix"></div>
   <div class="nhtWidget">
   		<h3>Need Responsive Web Design?</h3>
