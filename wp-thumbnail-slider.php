@@ -3,7 +3,7 @@
   Plugin Name: WP Thumbnail Slider
   Plugin URI: http://www.e2soft.com/blog/wp-thumbnail-slider/
   Description: WP Thumbnail Slider is a wordpress image slider plugin with thumbnail. Use this shortcode <strong>[WPT-SLIDER]</strong> in the post/page" where you want to display slider.
-  Version: 1.8
+  Version: 1.9
   Author: S M Hasibul Islam
   Author URI: http://www.e2soft.com
   Copyright: 2015 S M Hasibul Islam http:/`/www.e2soft.com
@@ -84,8 +84,8 @@ function thumbHookFunction()
 register_activation_hook( __FILE__, 'thumbHookFunction' );
 
 function wPTPostLoop() {
-    echo '<div id="wptSlider">';
-    echo '<div id="slider" class="flexslider"><ul class="slides">';
+	//lightSlider
+    echo '<div id="wptSlider"><ul id="image-gallery" class="gallery list-unstyled cS-hidden">';
     $wptArgs = array(
         'post_type' => 'wptpost',
         'showposts' => 20,
@@ -98,33 +98,13 @@ function wPTPostLoop() {
         $thumb_id = get_post_thumbnail_id();
         $thumb_url = wp_get_attachment_image_src($thumb_id, 'full', true);
         ?>
-        <li><img src="<?php echo $thumb_url[0]; ?>" /></li>
+        <li data-thumb="<?php echo $thumb_url[0]; ?>">
+        	<img src="<?php echo $thumb_url[0]; ?>" />
+        </li>
         <?php
     endwhile;
-    echo '</ul>
-        </div>';
-
+    echo '</ul></div>';
     wp_reset_query();
-
-    echo '<div id="carousel" class="flexslider"><ul class="slides">';
-    $wptArgs1 = array(
-        'post_type' => 'wptpost',
-        'showposts' => 20,
-        'orderby' => 'date',
-        'order' => 'DESC'
-    );
-    $wptQuery1 = new WP_Query($wptArgs1);
-    while ($wptQuery1->have_posts()) : $wptQuery1->the_post();
-
-        $thumb_id1 = get_post_thumbnail_id();
-        $thumb_url1 = wp_get_attachment_image_src($thumb_id1, 'thumbnail', true);
-        ?>
-        <li><img src="<?php echo $thumb_url1[0]; ?>" /></li>
-        <?php
-    endwhile;
-    echo '</ul>
-        </div>
-		</div>';
 }
 
 function imageSlideOption()
@@ -135,32 +115,25 @@ add_action('wp_footer', 'imageSlideOption', 100);
 
 function slideScript() {
     ?>
-    <script type="text/javascript">
-        jQuery(function() {
-            SyntaxHighlighter.all();
-        });
-        jQuery(window).load(function() {
-            jQuery('#carousel').flexslider({
-                animation: "slide",
-                controlNav: true,
-                animationLoop: true,
-                slideshow: true,
-                itemWidth: <?php $wpt_thumb_size = get_option('wpt_thumb_size'); if(!empty($wpt_thumb_size)) {echo $wpt_thumb_size;} else {echo "85";}?>,
-                itemMargin: 5,
-                asNavFor: '#slider'
+    <script>
+    	 jQuery(document).ready(function() {
+			jQuery("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
             });
-
-            jQuery('#slider').flexslider({
-                animation: "slide",
-                controlNav: false,
-                animationLoop: false,
-                slideshow: true,
-                sync: "#carousel",
-                start: function(slider) {
-                    jQuery('body').removeClass('loading');
-                }
+            jQuery('#image-gallery').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:9,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    jQuery('#image-gallery').removeClass('cS-hidden');
+                }  
             });
-        });
+		});
     </script>
     <?php
 }

@@ -28,10 +28,6 @@ function wptPageFunction() {
 					<th><label for="wpt_border">Slider Border </label></th>
 					<td><input type="text" name="wpt_border" value="<?php $wpt_border = get_option('wpt_border'); if(!empty($wpt_border)) {echo $wpt_border;} else {echo "0";}?>">px;</td>
 				</tr>
-                <tr>
-					<th><label for="wpt_thumb_size">Thumbnail Size</label></th>
-					<td><input type="text" name="wpt_thumb_size" id="wpt_thumb_size" value="<?php $wpt_thumb_size = get_option('wpt_thumb_size'); if(!empty($wpt_thumb_size)) {echo $wpt_thumb_size;} else {echo "85";}?>" class="wpt_thumb_size" />px</td>
-				</tr>
 				<tr>
 					<th><label for="wpt_bg_color">Slider Border Color </label></th>
 					<td><input type="text" name="wpt_bg_color" id="wpt_bg_color" value="<?php $wpt_bg_color = get_option('wpt_bg_color'); if(!empty($wpt_bg_color)) {echo $wpt_bg_color;} else {echo "#569625";}?>" class="color-picker nht_bg_color" /></td>
@@ -55,10 +51,17 @@ function wptPageFunction() {
  
   
   <div id="nhtRight">
-  
+    <div class="nhtWidget">
+    <h3>Need Responsive Web Design?</h3>
+	<?php
+	 $urls_total = array("http://www.e2soft.com/web-design/","http://www.e2soft.com/web-development/","http://www.e2soft.com/web-hosting/","http://www.e2soft.com/portfolio");
+	$random_urls = array_rand($urls_total);
+	?>
+	<iframe class="border_1" src="<?php echo $urls_total["$random_urls"]; ?>" width="320" height="300">
+	</iframe>
+	</div>
   <div class="clrFix"></div>
   <div class="nhtWidget">
-  		<h3>Need Responsive Web Design?</h3>
   		<a href="http://www.e2soft.com" title="Web Design Company" target="_blank"><img src="<?php bloginfo('url' ); echo"/wp-content/plugins/wp-thumbnail-slider/img/responsive-web-design.png"; ?>" alt="Web Design Company" /></a>
         
 <p><h3>Donate and support the development.</h3> With your help I can make Simple Fields even better! $5, $10, $100 – any amount is fine! :)</p>
