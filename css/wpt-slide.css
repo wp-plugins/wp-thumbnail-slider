@@ -14,6 +14,9 @@
 #image-gallery li, .lSPager li{
 	list-style-type:none !important;
 }
+.lSSlideOuter .lightSlider > *, .lSSlideOuter .lSGallery li {
+  margin: 0 !important;
+}
 /*Custom CSS*/
 
 .lSSlideOuter {

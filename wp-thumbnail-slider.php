@@ -3,7 +3,7 @@
   Plugin Name: WP Thumbnail Slider
   Plugin URI: http://www.e2soft.com/blog/wp-thumbnail-slider/
   Description: WP Thumbnail Slider is a wordpress image slider plugin with thumbnail. Use this shortcode <strong>[WPT-SLIDER]</strong> in the post/page" where you want to display slider.
-  Version: 2.0
+  Version: 2.1
   Author: S M Hasibul Islam
   Author URI: http://www.e2soft.com
   Copyright: 2015 S M Hasibul Islam http:/`/www.e2soft.com
